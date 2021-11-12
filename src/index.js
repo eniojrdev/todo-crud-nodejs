@@ -10,7 +10,7 @@ app.use(express.json());
 
 // const users = [];
 
-function checksExistsUserAccount(request, response, next) {
+function checkIfUserExists(request, response, next) {
   // Complete aqui
 }
 
@@ -18,23 +18,23 @@ app.post('/users', (request, response) => {
   // Complete aqui
 });
 
-app.get('/todos', checksExistsUserAccount, (request, response) => {
+app.get('/todos', checkIfUserExists, (request, response) => {
   // Complete aqui
 });
 
-app.post('/todos', checksExistsUserAccount, (request, response) => {
+app.post('/todos', checkIfUserExists, (request, response) => {
   // Complete aqui
 });
 
-app.put('/todos/:id', checksExistsUserAccount, (request, response) => {
+app.put('/todos/:id', checkIfUserExists, (request, response) => {
   // Complete aqui
 });
 
-app.patch('/todos/:id/done', checksExistsUserAccount, (request, response) => {
+app.patch('/todos/:id/done', checkIfUserExists, (request, response) => {
   // Complete aqui
 });
 
-app.delete('/todos/:id', checksExistsUserAccount, (request, response) => {
+app.delete('/todos/:id', checkIfUserExists, (request, response) => {
   // Complete aqui
 });
 
